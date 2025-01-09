@@ -30,8 +30,8 @@
 
 <body class="flex flex-col min-h-screen bg-[hsl(210,46%,95%)] p-5">
   <main class="flex-grow flex justify-center items-center">
-    <div class="max-w-[50rem] min-w-[20rem] shadow-xl relative font-manrope text-[hsl(214,17%,51%)] md:flex bg-white overflow-hidden rounded-xl">
-      <img src="./images/drawers.jpg" class="md:max-w-[17rem] md:max-h-none max-h-44 w-full object-cover"  alt="">
+    <div class="lg:max-w-[50rem] max-w-[30rem]  min-w-[20rem] shadow-xl relative font-manrope text-[hsl(214,17%,51%)] lg:flex bg-white rounded-xl">
+      <img src="./images/drawers.jpg" class="lg:rounded-l-lg lg:rounded-tr-none rounded-t-lg lg:max-w-[17rem] lg:max-h-none max-h-44 w-full object-cover"  alt="">
       <div class="p-8">
         <h2 class="text-xl font-semibold text-[hsl(217,19%,35%)]">
           Shift the overall look and feel by adding these wonderful
@@ -43,22 +43,24 @@
           it felt slightly bare and uninviting. I’ve got some simple tips
           to help you make any room feel complete.
         </p>
-        <ul id="share" class="absolute bg-[hsl(217,19%,35%)] md:w-auto w-full left-0 bottom-0 gap-4 pb-11 md:p-5 p-5 md:rounded-lg md:right-0 md:left-auto md:bottom-24  mt-3 hidden flex-grow">
-          <li><a href="" class="text-[hsl(212,23%,69%)]">SHARE</a></li>
-          <li><a href=""><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
-          <li><a href=""><img src="./images/icon-pinterest.svg" alt="pinterest"></a></li>
-          <li><a href=""><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
-        </ul>
-        <div aria-hidden="true" id="pointer" class="absolute hidden md:hidden w-3 h-3 bottom-16 right-8" style="border: 1rem solid transparent; border-top-color: hsl(217,19%,35%); "></div>
         <div id="crdft" class="flex mt-3 pt-3 items-center">
           <img src="./images/avatar-michelle.jpg" class="max-w-10 rounded-full" alt="">
           <p class="ps-3 text-sm flex-grow">
-            <span class=" text-base block font-bold text-[hsl(217,19%,35%)]">Michelle Appleton</span>
+            <span class="text-base block font-bold text-[hsl(217,19%,35%)]">Michelle Appleton</span>
             28 Jun 2020
           </p>
-          <button class="bg-[hsl(210,46%,95%)] z-10 p-2 rounded-full">
-            <img src="./images/icon-share.svg" alt="share">
-          </button>
+          <div class="lg:relative">
+            <button aria-label="share-btn" aria-expanded="false" aria-controls="share" class="bg-[hsl(210,46%,95%)] relative z-10 p-2 rounded-full">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="fill-[#6E8098]" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            </button>
+            <ul id="share" class="absolute bg-[hsl(217,19%,35%)] w-full lg:w-auto left-0 bottom-0 gap-4 pb-11 lg:p-5 p-5 lg:rounded-t-lg rounded-t-none rounded-lg lg:bottom-12 hidden first-letter: lg:left-[50%] lg:translate-x-[-50%] mt-3 items-center flex-grow" hidden>
+              <li><a href="" class="text-[hsl(212,23%,69%)]">SHARE</a></li>
+              <li><a href=""><img src="./images/icon-facebook.svg" class="min-w-5" alt="facebook"></a></li>
+              <li><a href=""><img src="./images/icon-pinterest.svg" class="min-w-5" alt="pinterest"></a></li>
+              <li><a href=""><img src="./images/icon-twitter.svg" class="min-w-5" alt="twitter"></a></li>
+            </ul>
+            <div aria-hidden="true" id="pointer" class="absolute hidden lg:hidden w-3 h-3 bottom-4 right-0" style="border: 1rem solid transparent; border-top-color: hsl(217,19%,35%); "></div>
+          </div>
         </div>
       </div>
     </div>
